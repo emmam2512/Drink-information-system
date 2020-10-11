@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.componentsController">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="212.0" layoutY="35.0" text="Components ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="150.0" text="ingredient" />
+            <ChoiceBox fx:id="ingredientBox" layoutX="137.0" layoutY="146.0" prefWidth="150.0" />
+            <Label layoutX="46.0" layoutY="213.0" text="Quantity(ml)" />
+            <Button layoutX="239.0" layoutY="310.0" mnemonicParsing="false" onAction="#addComponents" text="Submit" />
+            <Button layoutX="61.0" layoutY="310.0" mnemonicParsing="false" onAction="#openMain" text="Home" />
+            <Label layoutX="66.0" layoutY="98.0" text="Drinks" />
+            <ChoiceBox fx:id="drinkBox" layoutX="137.0" layoutY="94.0" prefWidth="150.0" />
+            <ListView fx:id="ListIngrediant" layoutX="355.0" layoutY="80.0" prefHeight="259.0" prefWidth="208.0" />
+            <Slider fx:id="quantity" layoutX="137.0" layoutY="215.0" showTickLabels="true" showTickMarks="true" />
+            <Button layoutX="433.0" layoutY="348.0" mnemonicParsing="false" onAction="#addToDrink" text="Add" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
